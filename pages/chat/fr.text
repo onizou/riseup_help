@@ -1,47 +1,47 @@
-@title = "Chat Riseup"
-@nav_title = "Chat"
+@title = "Clavardage Riseup"
+@nav_title = "Clavardage"
 
-h2. Qu'est-ce que Jabber ?
+h2. Qu’est XMPP ?
 
-Jabber est un protocole de messagerie instantanée ainsi que de chat audio et vidéo. Jabber permet d'envoyer et de recevoir des messages entres utilisateurs, et ce, peu importe le fournisseur parmi les milliers disponibles.
+XMPP est un protocole de messagerie instantanée de visioconférence. Il permet d’envoyer et de recevoir des messages entre utilisateurs, et ce, via l’un des milliers d’hébergeurs potentiels.
 
-h2. Utiliser le service Jabber de Riseup
+h2. Utiliser le service XMPP de Riseup
 
-Votre adresse email riseup.net sert aussi d'adresse jabber. Une personne souhaitant vous envoyez un message ou une demande d'amitié n'a qu'à l'envoyer à [@utilisateur@riseup.net@].
+Votre adresse courriel Riseup.net sert aussi d’adresse XMPP. Toute personne souhaitant vous envoyez un message ou une demande d’amitié doit l’envoyer à [@utilisateur@riseup.net@].
 
-Pour configurer votre [[client jabber => chat/clients]], vous aurez besoin des informations suivante:
+Pour paramétrer votre [[client XMPP => chat/clients]], vous aurez besoin des informations suivantes:
 
-* *protocole*: "jabber" ou "xmpp"
+* *protocole*: "xmpp" ou "jabber"
 * *compte*: [@utilisateur@riseup.net@]
 * *mot de passe*: votre [[mot de passe Riseup -> human-security/riseup-password]]
 
-Il est vraiment important de toujours configurer son client à *nécessite chiffrement*. Certains clients on une option "utiliser le chiffrement si disponible", mais ce n'est pas assez. En effet, même si les serveurs de riseup.net demandent le chiffrement, si votre client est configuré à "utiliser le chiffrement si disponible", un attaquant pourra facilement récupérer votre mot de passe.
+Prenez soin de toujours paramétrer votre client XMPP afin qu’il requière le chiffrement de vos messages (*nécessite chiffrement*). Certains clients proposent d’« utiliser le chiffrement si disponible », mais c’est insuffisant. En effet, même si les serveurs de Riseup.net demandent le chiffrement, si votre client est paramétré pour « utiliser le chiffrement si disponible », un attaquant pourra facilement récupérer votre mot de passe.
 
-Certains clients jabber vont demander votre nom d'utilisateur et le domaine séparément. Dans ce cas, vous devrez spécifier les informations suivante:
+Certains clients XMPP vous demandent votre nom d’utilisateur et le domaine séparément. Dans ce cas, vous devrez spécifier les informations suivantes :
 
-* *nom d'utilisateur*: [@utilisateur@]
+* *nom d’utilisateur*: [@utilisateur@]
 * *domaine*: @riseup.net@
 
-Pour des tutoriels spécifiques aux clients, vous pouvez regarder la page sur les [[clients jabber => chat/clients]].
+Pour des tutoriels spécifiques aux clients, vous pouvez regarder la page sur les [[clients XMPP => chat/clients]].
 
-h2. Se connecter à des _chatrooms_ multi-utilisateurs
+h2. Se connecter à des _clavardoirs_ multi-utilisateurs
 
-La syntaxe pour créer ou se connecter à un _chatroom_ sur le réseau jabber de Riseup est la suivante:
+La syntaxe pour créer ou se connecter à un _clavardoir_ sur le réseau XMPP de Riseup est la suivante :
 
-* [@votre-nom-de-chatroom@conference.riseup.net@]
+* [@nom-du-clavardoir@conference.riseup.net@]
 
-Si vous avez besoin de spécifiez le _chatroom_ séparément:
+Si vous avez besoin de spécifier le _clavardoir_ séparément:
 
-* *_chatroom_*: @votre-nom-de-chatroom@
+* *_clavardoir_*: @nom-du-clavardoir@
 * *domaine*: @conference.riseup.net@
 
-Ne faites pas ça:
+Ne faites pas ça :
 
-* [@votre-nom-de-chatroom@riseup.net@]
+* [@nom-du-clavardoir@riseup.net@]
 
-h3. Utiliser les _chatrooms_ avec pidgin
+h3. Utiliser les _clavardoirs_ avec Pidgin
 
-Pour joindre ou créer un _chatroom_ en étant connecté avec [[pidgin]], vous devez cliquer sur @Add room@ dans le menu @Buddy@.
+Pour joindre ou créer un _clavardoir_ en étant connecté via [[pidgin]], vous devez cliquer sur @Add room@ dans le menu @Buddy@.
 
 * *_Room_*: @votre-nom-de-room@
 * *Serveur*: @conference.riseup.net@
@@ -50,12 +50,11 @@ Pour joindre ou créer un _chatroom_ en étant connecté avec [[pidgin]], vous d
 * *Alias*: [optionnel]
 * *Groupe*: [optionnel]
 
-Cliquer sur @Ok@ et regarder la liste de _buddy_. Vous devriez voir un groupe @Chat@ avec la liste des _chatroom_.
-Cliquez droit sur un _chatroom_ et sélectionnez @join@.
+Cliquez sur @Ok@ et vérifiez la liste de _buddy_. Vous devriez voir un groupe @Chat@ avec la liste des _clavardoirs_.
+Cliquez droit sur un _clavardoir_ et sélectionnez @join@.
 
-Pour tester, vous pouvez sélectionner le _chatroom_ @riseup.net@ et le joindre.
+Pour tester, vous pouvez sélectionner le _clavardoir_ @riseup.net@ et le rejoindre.
 
 h2. Pour plus de sécurité
 
-Pour plus de sécurité, accédez à notre serveur jabber en utilisant le [[VPN Riseup => vpn]] ou avec ce "service caché:":https://www.torproject.org/docs/hidden-services.html.en: Regardez la [[page Tor => tor#riseups-tor-hidden-services]] pour une liste complètes de nos services cachés.
-
+Pour plus de sécurité, accédez à notre serveur XMPP via le [[VPN Riseup => vpn]] ou via ce "service caché:":https://www.torproject.org/docs/hidden-services.html.en: Visitez [[page Tor => tor#riseups-tor-hidden-services]] pour une liste complète de nos services cachés.
